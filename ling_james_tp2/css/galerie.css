@@ -1,0 +1,19 @@
+.fig__galerie {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  transition: transform 2s, background-color 1s 2s, color 1s 3s;
+}
+.img_galerie {
+  /*État initial des images avant la transformation*/
+  transform: rotate(0deg) scale(1);
+  border: 2px solid black;
+}
+.figcaption_galerie {
+  text-align: center;
+}
+#chk-burger:checked ~ .fig__galerie {
+  /*État final de la transition*/
+  transform: translate(100vw);
+  background-color: lightcoral;
+}

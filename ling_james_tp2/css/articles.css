@@ -1,0 +1,15 @@
+/*Début de l'article--------------------------------------------------------------------------------------------*/
+#articles {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 20%;
+}
+/*Place les textes dans des boîtes*/
+#articles .articles_principal {
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid #aaa;
+  height: 290px;
+}

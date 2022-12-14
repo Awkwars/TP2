@@ -1,0 +1,16 @@
+#tableau table {
+  font-family: cursive;
+  border: 1px solid black;
+  /*Rend beaucoup plus beau (important)*/
+  border-collapse: collapse;
+}
+#tableau tr {
+}
+#tableau th {
+  padding: 15px;
+  border: 1px solid black;
+}
+#tableau td {
+  padding: 10px;
+  border: 1px solid black;
+}

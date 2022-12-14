@@ -1,0 +1,12 @@
+#inscription form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+/*Crée l'espacement entre les inscriptions*/
+#inscription form label {
+  margin: 10px 0;
+}
+#inscription .langage {
+  display: flex;
+}

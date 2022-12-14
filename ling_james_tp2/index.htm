@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Étape-3 Lab9</title>
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/tableau.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/form.css" />
+    <link rel="stylesheet" href="css/galerie.css" />
+    <link rel="stylesheet" href="css/articles.css" />
+  </head>
+  <body>
+    <nav>
+      <a href="#accueil">Accueil</a>
+      <a href="#inscription">Inscription</a>
+      <a href="#tableau">Tableau</a>
+      <a href="#articles">Articles</a>
+      <a href="#galerie">Galerie</a>
+      <a href="#video">Vidéo</a>
+      <a href="#pied-page">Pied&nbsp;de&nbsp;page</a>
+    </nav>
+    <!--/////////////////////////////////////////////////////////////////////// Accueil -->
+    <section id="accueil">
+      <h1>TP2</h1>
+      <h2>Les amoureux de la nature</h2>
+      <p>Auteur: James Ling</p>
+      <p>1W1 - Mise en page Web</p>
+      <p>Techniques d'intégration multimédia</p>
+      <p>Collège de Maisonneuve</p>
+      <p>Automne 2021</p>
+      <a href="Page de Github">Github-page</a>
+    </section>
+    <!--/////////////////////////////////////////////////////////////////////// Inscription -->
+    <section id="inscription">
+      <h1>Inscription</h1>
+      <form>
+        <label for="txtNom"
+          >Nom<input
+            type="text"
+            name=""
+            id="txtNom"
+            placeholder="Entrez votre nom"
+          />
+        </label>
+        <label for="txtPrenom"
+          >Prénom<input
+            type="text"
+            name=""
+            id="txtPrenom"
+            placeholder="Entrez votre prénom"
+        /></label>
+        <label for="txtEmail"
+          >Courriel<input
+            type="email"
+            name=""
+            id="txtEmail"
+            placeholder="Entrez votre courriel"
+        /></label>
+        <div class="langage">
+          <label for="html"
+            >HTML<input type="checkbox" name="" id="html" />
+          </label>
+          <label for="css"
+            >CSS<input type="checkbox" name="" id="css" />
+          </label>
+          <label for="js"
+            >JavaScript<input type="checkbox" name="" id="js" />
+          </label>
+          <label for="php"
+            >PHP<input type="checkbox" name="" id="php" />
+          </label>
+        </div>
+      </form>
+    </section>
+    <!--/////////////////////////////////////////////////////////////////////// Tableau -->
+    <section id="tableau">
+      <h1>Tableau</h1>
+      <table class="tableau">
+        <tr>
+          <th>Nom</th>
+          <th>Prénom</th>
+          <th>Programme</th>
+        </tr>
+        <tr>
+          <td>Ling</td>
+          <td>James</td>
+          <td>TIM</td>
+        </tr>
+        <tr>
+          <td>Fleur</td>
+          <td>Asuna</td>
+          <td>SIM</td>
+        </tr>
+        <tr>
+          <td>Roche</td>
+          <td>Lucy</td>
+          <td>POL</td>
+        </tr>
+      </table>
+    </section>
+    <!--/////////////////////////////////////////////////////////////////////// Articles -->
+    <section id="articles">
+      <h1>Articles</h1>
+      <article class="articles_principal">
+        <section>
+          <h1>Fleur de cerisier</h1>
+          <h2>Une belle fleur!</h2>
+          <p>
+            Ses bourgeons de fleurs sont roses et leur couleur s'éclaircit tout
+            au long de la vie pour donner des fleurs à cinq pétales d'un blanc
+            très légèrement teinté de rose. Les feuilles ne sortent pas avant
+            que les fleurs tombent, ce qui lui donne un très bel aspect à la
+            floraison. Son feuillage est jaune d'or en automne.
+          </p>
+        </section>
+        <figure>
+          <img src="images/fleur_de_cerisier6.jpg" alt="fleur de cerisier" />
+          <figcaption>Une fleur de cerisier!</figcaption>
+        </figure>
+      </article>
+    </section>
+    <!--/////////////////////////////////////////////////////////////////////// Galerie -->
+    <section id="galerie">
+      <h1>Galerie</h1>
+      <input type="checkbox" name="chk-burger" id="chk-burger" />
+      <label for="chk-burger" id="burger">Cocher pour enlever les images</label>
+      <figure class="fig__galerie">
+        <figure>
+          <img
+            class="img_galerie"
+            src="images/fleur_de_cerisier1.jpg"
+            alt="fleur de cerisier avec une montagne"
+          />
+          <figcaption class="figcaption_galerie">Montagne</figcaption>
+        </figure>
+        <figure>
+          <img
+            class="img_galerie"
+            src="images/fleur_de_cerisier2.jpg"
+            alt="fleur de cerisier"
+          />
+          <figcaption class="figcaption_galerie">Fleur de cerisier</figcaption>
+        </figure>
+        <figure>
+          <img
+            class="img_galerie"
+            src="images/fleur_de_cerisier3.jpg"
+            alt="fleur de cerisier avec un édifice"
+          />
+          <figcaption class="figcaption_galerie">
+            Fleur de cerisier avec un édifice
+          </figcaption>
+        </figure>
+        <figure>
+          <img
+            class="img_galerie"
+            src="images/fleur_de_cerisier4.jpg"
+            alt="fleur de cerisier"
+          />
+          <figcaption class="figcaption_galerie">Fleur de cerisier</figcaption>
+        </figure>
+        <figure>
+          <img
+            class="img_galerie"
+            src="images/fleur_de_cerisier5.jpg"
+            alt="fleur de cerisier avec de l'eau"
+          />
+          <figcaption class="figcaption_galerie">
+            Fleur de cerisier avec de l'eau
+          </figcaption>
+        </figure>
+      </figure>
+    </section>
+    <!--///////////////////////////////////////-->
+    <!--
+<img
+      class="img_galerie"
+      src="images/fleur_de_cerisier1.jpg"
+      alt="fleur de cerisier avec une montagne"
+    />
+    <img
+      class="img_galerie"
+      src="images/fleur_de_cerisier2.jpg"
+      alt="fleur de cerisier"
+    />
+    <img
+      class="img_galerie"
+      src="images/fleur_de_cerisier3.jpg"
+      alt="fleur de cerisier avec un édifice"
+    />
+    <img
+      class="img_galerie"
+      src="images/fleur_de_cerisier4.jpg"
+      alt="fleur de cerisier"
+    />
+    <img
+      class="img_galerie"
+      src="images/fleur_de_cerisier5.jpg"
+      alt="fleur de cerisier avec de l'eau"
+    />
+
+        
+      -->
+
+    <!--/////////////////////////////////////////////////////////////////////// Vidéo -->
+    <section id="video">
+      <h1>Vidéo</h1>
+      <p>Fleur de cerisier vidéo</p>
+      <iframe
+        width="200"
+        height="200"
+        src="https://www.youtube.com/embed/KkS-mOFc0Bk"
+        title="YouTube video player"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen
+      ></iframe>
+      <p>Fleur de cerisier vidéo</p>
+      <iframe
+        width="250"
+        height="250"
+        src="https://www.youtube.com/embed/rq0BRilAqqY"
+        title="YouTube video player"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen
+      ></iframe>
+      <p>Fleur de cerisier vidéo</p>
+      <iframe
+        width="300"
+        height="300"
+        src="https://www.youtube.com/embed/qkw-P2BDsPw"
+        title="YouTube video player"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen
+      ></iframe>
+    </section>
+    <!--/////////////////////////////////////////////////////////////////////// Pied de page -->
+    <section id="pied-page">
+      <h1>Pied de page</h1>
+    </section>
+  </body>
+</html>
