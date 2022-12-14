@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="css/form.css" />
     <link rel="stylesheet" href="css/galerie.css" />
     <link rel="stylesheet" href="css/articles.css" />
+    <link rel="stylesheet" href="css/video.css" />
   </head>
   <body>
     <nav>
@@ -30,75 +31,112 @@
       <p>1W1 - Mise en page Web</p>
       <p>Techniques d'intégration multimédia</p>
       <p>Collège de Maisonneuve</p>
-      <p>Automne 2021</p>
+      <p>Automne 2022</p>
       <a href="Page de Github">Github-page</a>
     </section>
     <!--/////////////////////////////////////////////////////////////////////// Inscription -->
     <section id="inscription">
       <h1>Inscription</h1>
       <form>
+        <!--Text-->
         <label for="txtNom"
-          >Nom<input
-            type="text"
-            name=""
-            id="txtNom"
-            placeholder="Entrez votre nom"
-          />
+          >Nom<input type="text" id="txtNom" placeholder="Entrez votre nom" />
         </label>
         <label for="txtPrenom"
           >Prénom<input
             type="text"
-            name=""
             id="txtPrenom"
             placeholder="Entrez votre prénom"
         /></label>
         <label for="txtEmail"
           >Courriel<input
             type="email"
-            name=""
             id="txtEmail"
             placeholder="Entrez votre courriel"
         /></label>
-        <div class="langage">
-          <label for="html"
-            >HTML<input type="checkbox" name="" id="html" />
-          </label>
-          <label for="css"
-            >CSS<input type="checkbox" name="" id="css" />
-          </label>
-          <label for="js"
-            >JavaScript<input type="checkbox" name="" id="js" />
-          </label>
-          <label for="php"
-            >PHP<input type="checkbox" name="" id="php" />
-          </label>
+        <!--Boutton radio-->
+        <div class="radio">
+          <input
+            type="radio"
+            id="debutant"
+            name="difficulter"
+            value="debutant"
+          />
+          <label for="debutant">Débutant</label><br />
+          <input type="radio" id="avance" name="difficulter" value="avance" />
+
+          <label for="avance">Avancé</label><br />
+          <input type="radio" id="expert" name="difficulter" value="expert" />
+          <label for="expert">Expert</label>
         </div>
+        <!--Case à cocher-->
+        <label for="reinitialiser"
+          >Réinitialiser le formulaire<input
+            type="checkbox"
+            id="reinitialiser"
+          />
+        </label>
+        <!--Boutton select-->
+        <label>Choisis une plante</label>
+
+        <select name="fleur_choisi" id="fleur_choisi">
+          <option value="gerbera">Gerbera</option>
+          <option value="agapanthe">Agapanthe</option>
+          <option value="lupin">Lupin</option>
+          <option value="crocus">Crocus</option>
+        </select>
+        <!--Bouton-->
+        <button type="button">Soumission du formulaire</button>
       </form>
     </section>
     <!--/////////////////////////////////////////////////////////////////////// Tableau -->
     <section id="tableau">
       <h1>Tableau</h1>
       <table class="tableau">
-        <tr>
-          <th>Nom</th>
-          <th>Prénom</th>
-          <th>Programme</th>
-        </tr>
-        <tr>
-          <td>Ling</td>
-          <td>James</td>
-          <td>TIM</td>
-        </tr>
-        <tr>
-          <td>Fleur</td>
-          <td>Asuna</td>
-          <td>SIM</td>
-        </tr>
-        <tr>
-          <td>Roche</td>
-          <td>Lucy</td>
-          <td>POL</td>
-        </tr>
+        <caption>
+          Liste de fleurs colorées
+        </caption>
+        <thead>
+          <tr>
+            <th>Vert</th>
+            <td>Gerbera</td>
+            <td>Euphorbe</td>
+            <td>Molucelle</td>
+            <td>Hortensia</td>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th>Bleu</th>
+            <td>Aconit</td>
+            <td>Agapanthe</td>
+            <td>Iris</td>
+            <td>Myosotis</td>
+          </tr>
+          <tr>
+            <th>Bleu</th>
+            <td>Lupin</td>
+            <td>Jacinthe</td>
+            <td>Hortensia</td>
+            <td>Delphinium</td>
+          </tr>
+          <tr>
+            <th>Bleu</th>
+            <td>Althéa</td>
+            <td>Volubilis</td>
+            <td>Clématite</td>
+            <td>Aster</td>
+          </tr>
+        </tbody>
+        <tfoot>
+          <tr>
+            <th>Mauve</th>
+            <td>Lavande</td>
+            <td>Crocus</td>
+            <td>Glycine</td>
+            <td>Passiflore</td>
+          </tr>
+        </tfoot>
       </table>
     </section>
     <!--/////////////////////////////////////////////////////////////////////// Articles -->
@@ -117,8 +155,39 @@
           </p>
         </section>
         <figure>
-          <img src="images/fleur_de_cerisier6.jpg" alt="fleur de cerisier" />
+          <img src="images/fleur_de_cerisier6.jpg" alt="Fleur de cerisier" />
           <figcaption>Une fleur de cerisier!</figcaption>
+        </figure>
+      </article>
+      <article class="articles_principal">
+        <section>
+          <h1>La lavande</h1>
+          <h2>Arbrisseaux dicotylédones</h2>
+          <p>
+            Ce sont des arbrisseaux dicotylédones, à fleurs le plus souvent
+            mauves ou violettes disposées en épis, dont la plupart des espèces
+            très odorantes, sont largement utilisées dans toutes les branches de
+            la parfumerie, en particulier le lavandin.
+          </p>
+        </section>
+        <figure>
+          <img src="images/lavande.jpg" alt="Lavande" />
+          <figcaption>Une lavande!</figcaption>
+        </figure>
+      </article>
+      <article class="articles_principal">
+        <section>
+          <h1>Myosotis</h1>
+          <h2>Espèces sauvages.</h2>
+          <p>
+            Myosotis est un genre de plantes herbacées. On en retrouve une
+            centaine d'espèces dans les régions tempérées ou montagneuses à
+            travers le monde.
+          </p>
+        </section>
+        <figure>
+          <img src="images/myosotis.jpg" alt="Une myosotis" />
+          <figcaption>Une myosotis!</figcaption>
         </figure>
       </article>
     </section>
@@ -172,73 +241,128 @@
             Fleur de cerisier avec de l'eau
           </figcaption>
         </figure>
+        <figure>
+          <img class="img_galerie" src="images/route.jpg" alt="Route" />
+          <figcaption class="figcaption_galerie">Route</figcaption>
+        </figure>
+        <figure>
+          <img class="img_galerie" src="images/soleil.jpg" alt="Soleil" />
+          <figcaption class="figcaption_galerie">Soleil</figcaption>
+        </figure>
+        <figure>
+          <img class="img_galerie" src="images/arbre.jpg" alt="arbre" />
+          <figcaption class="figcaption_galerie">Arbre</figcaption>
+        </figure>
       </figure>
     </section>
-    <!--///////////////////////////////////////-->
-    <!--
-<img
-      class="img_galerie"
-      src="images/fleur_de_cerisier1.jpg"
-      alt="fleur de cerisier avec une montagne"
-    />
-    <img
-      class="img_galerie"
-      src="images/fleur_de_cerisier2.jpg"
-      alt="fleur de cerisier"
-    />
-    <img
-      class="img_galerie"
-      src="images/fleur_de_cerisier3.jpg"
-      alt="fleur de cerisier avec un édifice"
-    />
-    <img
-      class="img_galerie"
-      src="images/fleur_de_cerisier4.jpg"
-      alt="fleur de cerisier"
-    />
-    <img
-      class="img_galerie"
-      src="images/fleur_de_cerisier5.jpg"
-      alt="fleur de cerisier avec de l'eau"
-    />
-
-        
-      -->
-
     <!--/////////////////////////////////////////////////////////////////////// Vidéo -->
     <section id="video">
       <h1>Vidéo</h1>
-      <p>Fleur de cerisier vidéo</p>
-      <iframe
-        width="200"
-        height="200"
-        src="https://www.youtube.com/embed/KkS-mOFc0Bk"
-        title="YouTube video player"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-        allowfullscreen
-      ></iframe>
-      <p>Fleur de cerisier vidéo</p>
-      <iframe
-        width="250"
-        height="250"
-        src="https://www.youtube.com/embed/rq0BRilAqqY"
-        title="YouTube video player"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-        allowfullscreen
-      ></iframe>
-      <p>Fleur de cerisier vidéo</p>
-      <iframe
-        width="300"
-        height="300"
-        src="https://www.youtube.com/embed/qkw-P2BDsPw"
-        title="YouTube video player"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-        allowfullscreen
-      ></iframe>
+      <article class="video_principal">
+        <section>
+          <h1>Jacinthe</h1>
+          <p>
+            Liliacée bulbeuse à fleurs en grappe très décoratives, parfumées,
+            printanières, dont de nombreuses variétés sont cultivées dans les
+            jardins ou en appartement, parfois sans sol.
+          </p>
+        </section>
+        <figure>
+          <iframe
+            width="200"
+            height="200"
+            src="https://www.youtube.com/embed/ABGw1AMyeIU"
+            title="YouTube video player"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
+        </figure>
+      </article>
+      <article class="video_principal">
+        <section>
+          <h1>Agapanthe</h1>
+          <p>
+            C'est une plante à avoir absolument si le climat le permet. Mais si
+            l'été offre une belle floraison, l'hiver demande quelques
+            précautions pour conserver les agapanthes.
+          </p>
+        </section>
+        <figure>
+          <iframe
+            width="200"
+            height="200"
+            src="https://www.youtube.com/embed/fmVtFtDjZTs"
+            title="YouTube video player"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
+        </figure>
+      </article>
     </section>
     <!--/////////////////////////////////////////////////////////////////////// Pied de page -->
-    <section id="pied-page">
-      <h1>Pied de page</h1>
-    </section>
+    <footer id="pied-page">
+      <section class="text">
+        <dl>
+          <dt>Adresse du collège de Maisonneuve</dt>
+          <dd>3800 R. Sherbrooke E, Montréal, QC H1X 2A2</dd>
+        </dl>
+        <dl>
+          <dt>Description</dt>
+          <dd>
+            Que ce soit pour nos compositions de fleurs exotiques et modernes,
+            pour nos bouquets de fleurs de jardin, sauvages ou stylisés, vous
+            saurez apprécier la fraîcheur de nos fleurs et la qualité
+            d'exécution de nos fleuristes artisans.
+          </dd>
+        </dl>
+      </section>
+      <section class="footer_fleur">
+        <a href="https://bloomex.ca/florist/montreal/">Bloomex</a>
+        <a href="https://www.terrafolia.ca/">Terrafolia</a>
+        <a href="https://www.fleuristeabaca.com/">Marchand de fleurs</a>
+      </section>
+
+      <a href="https://www.facebook.com/">Facebook</a>
+      <img
+        src="https://s2.svgbox.net/social.svg?ic=facebook&color=fff"
+        width="16"
+        height="16"
+        alt="facebook"
+      />
+
+      <a href="https://github.com/">Github</a>
+      <img
+        src="https://s2.svgbox.net/social.svg?ic=github&color=fff"
+        width="16"
+        height="16"
+        alt="Github"
+      />
+
+      <a href="https://www.instagram.com/">Instagram</a>
+      <img
+        src="https://s2.svgbox.net/social.svg?ic=instagram&color=fff"
+        width="16"
+        height="16"
+        alt="Instagram"
+      />
+
+      <a href="https://twitter.com/">Twitter</a>
+      <img
+        src="https://s2.svgbox.net/social.svg?ic=twitter&color=fff"
+        width="16"
+        height="16"
+        alt="Twitter"
+      />
+
+      <a href="https://www.youtube.com/">Youtube</a>
+      <img
+        src="https://s2.svgbox.net/social.svg?ic=youtube&color=fff"
+        width="16"
+        height="16"
+        alt="Youtube"
+      />
+
+      <p>Avis de confidentialité | Privacy Notice</p>
+    </footer>
   </body>
 </html>

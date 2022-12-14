@@ -4,11 +4,12 @@
   flex-wrap: wrap;
   transition: transform 2s, background-color 1s 2s, color 1s 3s;
 }
+/*État initial des images avant la transformation*/
 .img_galerie {
-  /*État initial des images avant la transformation*/
   transform: rotate(0deg) scale(1);
-  border: 2px solid black;
+  border: 1px solid black;
 }
+/*Bien centrer le texte en dessous des images*/
 .figcaption_galerie {
   text-align: center;
 }

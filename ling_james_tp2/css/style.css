@@ -10,23 +10,25 @@ section,
 h1 {
   margin: 0;
 }
+/*Rend le text a une bonne équilibre même quand la page est plus petit*/
 h1 {
   font-size: 3rem;
   font-size: clamp(3rem, 2.8rem + 1vw, 4rem);
   font-family: Georgia, "Times New Roman", Times, serif;
 }
+/*Font du text*/
 p,
 h2 {
   font-family: "Courier New", Courier, monospace;
   font-weight: bold;
 }
+/*Font pour le text en dessous des images*/
 figcaption {
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
-
-nav {
-  /* Positionne le menu dans la partie supérieur de la fenêtre.
+/* Positionne le menu dans la partie supérieur de la fenêtre.
   Avec le positionnement fixe, le référentiel est fenêtre*/
+nav {
   position: fixed;
   top: 5px;
   right: 0;
@@ -36,57 +38,124 @@ nav {
   flex-wrap: wrap;
   width: 75%;
 }
+/*Décorer le text et enlever la ligne en dessous*/
 nav a {
   display: block;
-  /* Premier chiffre veut dire: Défini comment l'élément va utiliser l'espace restant si c'est 0 il prend seulement l'espace qu'il a besoin
-  Deuxième chiffre veut dire: L'élément peut se compresser sur lui-même si tu met 1
-  Troisième chiffre est relier au premier si tu as mis 0 il va prendre 100px d'espace*/
   flex: 0 1 50px;
   text-decoration: none;
   font-family: "Times New Roman", Times, serif;
 }
-section {
-  min-height: 100vh;
-}
+/*Permet chaque sections d'avoir une grandeur qui prend tous la page*/
 #accueil,
 #inscription,
 #tableau,
 #articles,
 #galerie,
-#video {
+#video,
+#pied-page {
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
-
+/*Décorer tous les liens*/
+a {
+  color: rgb(54, 47, 47);
+  text-decoration: none;
+  font-size: 20px;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+/*Quand on hover sur le lien*/
+a:hover {
+  color: blue;
+}
+/*État actif */
+a:active {
+  color: hotpink;
+}
 /* Chacune des sections est ciblée avec leur <id>*/
-/*Début de l'accueil--------------------------------------------------------------------------------------------*/
+
 #accueil {
   background-color: lightskyblue;
 }
-/*Début de l'inscription--------------------------------------------------------------------------------------------*/
+
 #inscription {
   background-color: lightsteelblue;
 }
-/*Début du tableau--------------------------------------------------------------------------------------------*/
+
 #tableau {
   background-color: rgba(53, 132, 185, 0.514);
 }
-/*Début de l'article--------------------------------------------------------------------------------------------*/
+
 #articles {
   background-color: rgb(97, 134, 146);
 }
 
-/*Début de la galerie--------------------------------------------------------------------------------------------*/
 #galerie {
   background-color: lightblue;
 }
-/*Début des vidéos--------------------------------------------------------------------------------------------*/
+
 #video {
   background-color: rgba(94, 133, 170, 0.555);
 }
-/*Début du pied de page--------------------------------------------------------------------------------------------*/
-#pied-page {
-  background-color: rgba(50, 151, 197, 0.603);
+
+/*Début du footer --------------------------------------------------------------------*/
+/*Contrôle les propriétés du footer*/
+footer {
+  display: flex;
+  flex-direction: column;
+  color: white;
+  justify-content: space-between;
+  background-color: lightslategray;
+}
+/*Contrôle le texte dans le footer*/
+footer .text {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: 20px 0;
+  padding: 0 35% 0 35%;
+}
+footer dt {
+  display: block;
+  font-size: 30px;
+}
+/*Centre le texte*/
+footer dd {
+  margin-left: 0;
+  text-align: center;
+  padding: 10px 0 0 0;
+}
+/*Centre le texte*/
+footer dl {
+  flex: 0 1 20%;
+  text-align: left;
+  text-align: center;
+}
+/*Control la barre de recherche et les icônes médias pour bien les placer*/
+footer .util {
+  flex: 0 1 30%;
+  text-align: center;
+  margin-top: 100px;
+  flex-wrap: wrap;
+  padding: 0;
+}
+/*Espacer les icônes de médias*/
+footer .sociaux {
+  display: flex;
+  justify-content: center;
+}
+/*Espacer les icônes médias*/
+footer img {
+  padding: 10px;
+}
+/*Permet de bien placer les liens pour les cites de fleurs*/
+footer .footer_fleur {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  padding: 25px;
+  text-align: center;
 }

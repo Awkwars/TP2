@@ -1,5 +1,5 @@
-/*Contrôle les propriétés principales de la section articles*/
-#articles {
+/*Contrôle les propriétés principales de la section vidéo*/
+#video {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -8,15 +8,8 @@
   padding: 20px 20%;
 }
 /*Place les textes dans des boîtes*/
-#articles .articles_principal {
+#video .video_principal {
   display: flex;
   justify-content: space-between;
   border: 1px solid #aaa;
-}
-/*Bordure de l'image*/
-#articles img {
-  border: 1px solid black;
-}
-#articles figcaption {
-  text-align: center;
 }
